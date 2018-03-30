@@ -1,7 +1,7 @@
 docker run -ti --rm --name mysql-server -v $(pwd)/data/:/var/lib/mysql -d -p 3308:3306 -e MYSQL_ROOT_PASSWORD=pass mysql:8
 
 ## phpadminer
-docker run -d -ti --rm --name my-adminer --link mysql-server:db -p 8080:8080 adminer
+docker run -d -ti --rm --name my-adminer --link mysql-server:db -p 9999:8080 adminer
 
 
 ## phpmyadmin
